@@ -1,0 +1,27 @@
+<div class="container p-5">
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="name" required="true">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Author</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="author" 
+  required="true">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Summary</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="summary"
+  required="true"></textarea>
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">File</label>
+  <input type="File" class="form-control" (change)="onFileChange($event)" id="exampleFormControlInput1"
+  required="true">
+</div>
+
+<button class="btn btn-primary" (click)="onClick()">Submit</button>
+</div>
