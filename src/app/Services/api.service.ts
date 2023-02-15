@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-	url:string='http://localhost:3000/book/';
+	//url:string='http://localhost:3000/book/';
+  url:string='https://mylibrary-api-rub.vercel.app/';
 
   constructor(private http:HttpClient) { }
 
